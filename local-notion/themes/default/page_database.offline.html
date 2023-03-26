@@ -1,13 +1,10 @@
-﻿<!-- 
-    This template overrides default\page.offline.html and inserts some custom tokens. The purpose is to illustrate how templates work.
--->
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{theme://resources/datatables/css/jquery.dataTables.min.css}" />
-    <link rel="stylesheet" href="{theme://resources/bootstrap/bootstrap.min.css}" />
-    <link rel="stylesheet" href="{theme://resources/prism/prism.css}" />
+    <link rel="stylesheet" href="{theme://resources/bootstrap/bootstrap.min.css}">
+    <link rel="stylesheet" href="{theme://resources/prism/prism.css}">
     <link rel="stylesheet" href="{theme://resources/local-notion/css/common.css}" />
     <link rel="stylesheet" href="{theme://resources/local-notion/css/{render_mode}.css}" />
     <title>{title}</title>
@@ -19,24 +16,10 @@
         <div id="{page_name}" class="container mx-auto mx-5">
             <main>
                 {thumbnail}
-                <!----------------------------------------------------------------------------->
-                <!-- Insert custom user tokens -->
-                <p>
-                    <h3>This demo template inserted these custom tokens:</h3>
-                    <ul>
-                        <li><i>SomeTokenName</i> -> <b>{SomeTokenName}</b></li>
-                        <li><i>NewTokenName</i> -> <b>{NewTokenName}</b></li>
-                    </ul>
-                </p>
-                <p>
-                    <!-- This embeds a template item directly in the rendering -->
-                    <b>Templates can also embed other files directly inside. Below is embeds <code>include://.config.json</code> token:</b>
-                    <pre><code class="language-json">{include://.config.json}</code></pre>
-                </p>
-                <!----------------------------------------------------------------------------->
                 {page_title}
+		<div class="mt-n3 fs-sm" style="margin-top: -3.5em; margin-bottom: 2.5em; margin-left: 1em">{description}</div>
                 <div class="ln-block-children ln-page-children">
-                    {children}
+                    {contents}
                 </div>
             </main>
         </div>
@@ -51,7 +34,7 @@
     <script async src="{theme://resources/twitter/widgets.js}" charset="utf-8"></script>
     <script language="javascript">
         $(document).ready(function () {
-            $('#myTable').DataTable();
+            $('.ln-database').DataTable();
         });
     </script>
 </body>
