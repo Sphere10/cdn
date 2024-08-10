@@ -28,3 +28,16 @@ $(document).ready(function() {
     SetDataTables(maxRetries);
 
 });
+
+// Used to search articles
+function DoSearch(event) {
+    if (event.key === 'Enter') {
+        event.preventDefault();
+        const query = event.target.value;
+        if (query.trim() !== "") {
+            const domainAndPath = window.location.host + window.location.pathname;
+            const googleSearchUrl = `https://www.google.com/search?q=${encodeURIComponent(query)} site:${domainAndPath}`;
+            window.location.href = googleSearchUrl;
+        }
+    }
+}
