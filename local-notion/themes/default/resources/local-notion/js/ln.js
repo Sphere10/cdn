@@ -41,3 +41,6 @@ function DoSearch(event) {
         }
     }
 }
+
+// Feather icons
+feather.replace();
