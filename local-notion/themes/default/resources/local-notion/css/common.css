@@ -264,3 +264,26 @@ pre[class*="language-"] {
 .article-category-indent-6 {
     padding-left: calc(1.25rem * 6 + 1rem) !important;
 }
+
+
+/****************
+CMS related
+*****************/
+
+.ln-badge-rounded-circle {
+    height: calc(1em + var(--bs-badge-padding-y) * 2);
+    padding-left: var(--bs-badge-padding-y);
+    padding-right: var(--bs-badge-padding-y);
+    border-radius: var(--bs-border-radius-pill)
+}
+
+    .ln-badge-rounded-circle > * {
+        display: block;
+        width: 1em
+    }
+
+    .ln-badge-rounded-circle.badge-lg {
+        height: calc(1em + var(--bs-badge-padding-y-lg) * 2);
+        padding-left: var(--bs-badge-padding-y-lg);
+        padding-right: var(--bs-badge-padding-y-lg)
+    }
