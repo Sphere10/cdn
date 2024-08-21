@@ -74,67 +74,71 @@
     background-color: #EFEFEF;
 }
 
-/*.ln-color-default {
-    color: #37352F;
-    fill: #37352F;
-    caret-color: #37352F;
-}*/
-
 .ln-color-default {
+    background: inherit;
     color: inherit;
     fill: inherit;
     caret-color: inherit;
 }
 
 .ln-color-gray {
+    background: inherit;
     color: rgb(120, 119, 116);
     fill: rgb(120, 119, 116);
     caret-color: rgb(120, 119, 116);
 }
 
 .ln-color-brown {
+    background: inherit;
     color: rgb(159, 107, 83);
     fill: rgb(159, 107, 83);
     caret-color: rgb(159, 107, 83);
 }
 
 .ln-color-orange {
+    background: inherit;
     color: rgb(217, 115, 13);
     fill: rgb(217, 115, 13);
     caret-color: rgb(217, 115, 13);
 }
 
 .ln-color-yellow {
+    background: inherit;
     color: rgb(203, 145, 47);
     fill: rgb(203, 145, 47);
     caret-color: rgb(203, 145, 47);
 }
 
 .ln-color-green {
+    background: inherit;
     color: rgb(68, 131, 97);
     fill: rgb(68, 131, 97);
     caret-color: rgb(68, 131, 97);
 }
 
 .ln-color-blue {
+    background: inherit;
     color: rgb(51, 126, 169);
     fill: rgb(51, 126, 169);
     caret-color: rgb(51, 126, 169);
 }
 
 .ln-color-purple {
+    background: inherit;
     color: rgb(144, 101, 176);
     fill: rgb(144, 101, 176);
     caret-color: rgb(144, 101, 176);
 }
 
 .ln-color-pink {
+    background: inherit;
     color: rgb(193, 76, 138);
     fill: rgb(193, 76, 138);
     caret-color: rgb(193, 76, 138);
 }
 
 .ln-color-red {
+    background: inherit;
     color: rgb(212, 76, 71);
     fill: rgb(212, 76, 71);
     caret-color: rgb(212, 76, 71);
@@ -219,67 +223,4 @@
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
     font-size: 95%;
-}
-
-/**************************************************
-    CMS Related Styles
-***************************************************/
-
-.article-summary {
-    margin-bottom: 40px;
-    padding-bottom: 40px;
-    border-bottom: 2px solid #DFE7FB;
-    transition: all .4s ease;
-}
-
-.article-summary-thumbnail {
-    /*background-color: #fff;*/
-    border: none;
-    box-shadow: none;
-    padding: 0.25rem;
-    max-width: 10em;
-    max-height: 10em;
-}
-
-.article-category-indent-1 {
-    padding-left: calc(1.25rem * 1 + 1rem) !important;
-}
-
-.article-category-indent-2 {
-    padding-left: calc(1.25rem * 2 + 1rem) !important;
-}
-
-.article-category-indent-3 {
-    padding-left: calc(1.25rem * 3 + 1rem) !important;
-}
-
-.article-category-indent-4 {
-    padding-left: calc(1.25rem * 4 + 1rem) !important;
-}
-
-.article-category-indent-4 {
-    padding-left: calc(1.25rem * 5 + 1rem) !important;
-}
-
-.article-category-indent-6 {
-    padding-left: calc(1.25rem * 6 + 1rem) !important;
-}
-
-
-.ln-badge-rounded-circle {
-    height: calc(1em + var(--bs-badge-padding-y) * 2);
-    padding-left: var(--bs-badge-padding-y);
-    padding-right: var(--bs-badge-padding-y);
-    border-radius: var(--bs-border-radius-pill)
-}
-
-.ln-badge-rounded-circle > * {
-    display: block;
-    width: 1em
-}
-
-.ln-badge-rounded-circle.badge-lg {
-    height: calc(1em + var(--bs-badge-padding-y-lg) * 2);
-    padding-left: var(--bs-badge-padding-y-lg);
-    padding-right: var(--bs-badge-padding-y-lg)
 }
