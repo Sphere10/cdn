@@ -1,3 +1,6 @@
-﻿<span id="{object_id}" class="badge rounded-pill {include://color_aux.inc} text-uppercase px-3 my-1">
+﻿<span class="badge rounded-pill shadow-sm {include://badge_align.inc} {include://color_aux.inc} px-3 my-1">
     <small>{text}</small>
 </span>
+<script>
+    ReplaceParentAlignment(document.currentScript.previousElementSibling);
+</script>

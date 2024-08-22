@@ -1,1 +1,1 @@
-﻿text-dark-body-tertiary
+﻿text-dark-tertiary

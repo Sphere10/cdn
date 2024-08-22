@@ -1,1 +1,1 @@
-﻿text-dark-body-secondary
+﻿text-dark-secondary
