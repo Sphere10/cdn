@@ -87,7 +87,7 @@ function ColorSectionShapeSeparators() {
             nextLogicalSibling = nextLogicalSibling.firstElementChild;
         }
 
-        if (nextSection) {
+        if (nextLogicalSibling) {
             const sectionColor = GetEffectiveBackgroundColor(nextLogicalSibling); // Get effective background color
             const svgPath = shape.querySelector('svg path'); // Find the path inside the SVG
             if (svgPath) {
