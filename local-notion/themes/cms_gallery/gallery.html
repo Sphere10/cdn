@@ -1,0 +1,14 @@
+﻿<!-- Badges -->
+<nav class="nav justify-content-center mt-8">
+    <a class="badge rounded-pill bg-light me-1 mb-1 filter-all active" href="#" data-bs-toggle="pill" data-filter="*" data-bs-target="#{gallery_id}">
+        <span class="h6 text-uppercase">All</span>
+    </a>
+    {badges}
+</nav>
+
+<!-- CONTENT -->
+<section class="ln-page-content py-5 {include://color_bg.inc} {include://color_text.inc}" data-aos="fade-in" data-aos-delay="80">
+    <div id="{page_name}" class="ln-block-children ln-page-children" data-isotope='{"layoutMode": "masonry"}'>
+        {cards}
+    </div>
+</section>
