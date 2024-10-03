@@ -78,6 +78,7 @@ function ColorSectionShapeSeparators() {
         const parentDiv = shape.closest('.position-relative'); // Get the parent container
         if (!parentDiv)
             return; // some other shape (not a page separating shape)
+
         let nextLogicalSibling = parentDiv.nextElementSibling; // Get the next sibling
 
         // If no next sibling exists, get the parent's next sibling
