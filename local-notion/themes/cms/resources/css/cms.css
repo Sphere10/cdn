@@ -43,9 +43,12 @@ html {
     border: none;
     box-shadow: none;
     padding: 0.25rem;
-    max-width: 10em;
-    max-height: 10em;
+    max-width: 8em;
+    max-height: 8em;
+    min-width: 8em;
+    min-height: 8em;
 }
+
 
 .article-category-indent-1 {
     padding-left: calc(1.25rem * 1 + 1rem) !important;
