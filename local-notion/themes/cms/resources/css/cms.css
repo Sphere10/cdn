@@ -2,6 +2,11 @@
     CMS Related Styles
 ***************************************************/
 
+/** HTML tweaks **/
+html {
+    scroll-padding-top: 7em;
+}
+
 /** NAVBAR **/
 .nav-link {
     border-bottom: 2px solid transparent;
