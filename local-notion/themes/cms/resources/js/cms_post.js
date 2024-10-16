@@ -10,15 +10,15 @@
         var preloader = document.getElementById('preloader');
         var status = document.getElementById('preloader_status').style;
         status.opacity = 1;
-        let fadeOutAmount = 0.1;
+        var fadeOutAmount = 0.1;
 
         (function fade() {
             if ((status.opacity -= fadeOutAmount) <= 0) {
                 preloader.style.display = "none";
-                preloader.remove(); // Remove the preloader from the DOM
+               // preloader.remove(); // Remove the preloader from the DOM
             } else {
-                fadeOutAmount *= 1.1; // Increase fade speed slightly
-                setTimeout(fade, 40);
+                //fadeOutAmount *= 1.1; // Increase fade speed slightly
+                setTimeout(fade, 50);
             }
         })(); // Start fade-out immediately
     });
