@@ -1,31 +1,50 @@
 ﻿function PageLoader_Init() {
+    // Inject preloader into the body if necessary
     //$("body").prepend('<div id="preloader"><div id="preloader_status"></div></div>');
+
     var isBot = /bot|googlebot|bingbot|baiduspider|yandexbot|slurp|duckduckbot|applebot|sogou|seznambot|naverbot|exabot|rogerbot|ahrefsbot/i.test(navigator.userAgent);
-    if (isBot) {
-        var preloader = document.getElementById('preloader');
-        preloader.remove();
-        return;
-    }
+
     var preloader = document.getElementById('preloader');
-    if (!preloader)
-        return;
-    preloader.style.opacity = 1;
 
-    var status = document.getElementById('preloader_status');
-    if (!status) {
-        preloader.remove();
+    if (isBot || !preloader) {
+        preloader?.remove();  // Remove if bot or preloader is not found
         return;
     }
-    status.style.opacity = 1;
-    var fadeOutAmount = 0.1;
-    
-    window.addEventListener('load', function () {
-        // Fade #preloader_status
-        (function fade() { (status.style.opacity -= .1) < 0 ? status.style.display = "none" : setTimeout(fade, 50) })();
 
-        // Wait 40ms, fade #preloader
+    // Select status element as a child of preloader
+    var status = preloader.querySelector('#preloader_status');
+    if (!status) {
+        preloader.remove();  // Clean up if no status found
+        return;
+    }
+
+    preloader.style.opacity = 1;
+    status.style.opacity = 1;
+
+    window.addEventListener('load', function () {
+        let fadeOutAmount = 0.1;
+
+        // Fade out status element
+        (function fadeStatus() {
+            status.style.opacity -= fadeOutAmount;
+            if (status.style.opacity <= 0) {
+                status.style.display = "none";
+            } else {
+                setTimeout(fadeStatus, 50);
+            }
+        })();
+
+        // After 400ms, start fading out the preloader
         setTimeout(() => {
-           (function fade() { (preloader.style.opacity -= .1) < 0 ? preloader.style.display = "none" : setTimeout(fade, 40) })();
+            (function fadePreloader() {
+                preloader.style.opacity -= fadeOutAmount;
+                if (preloader.style.opacity <= 0) {
+                    preloader.style.display = "none";
+                    preloader.remove();  // Remove preloader from the DOM
+                } else {
+                    setTimeout(fadePreloader, 40);
+                }
+            })();
         }, 400);
     });
 }
