@@ -9,7 +9,7 @@
     var preloader = document.getElementById('preloader');
     if (!preloader)
         return;
-    preload.style.opacity = 1;
+    preloader.style.opacity = 1;
 
     var status = document.getElementById('preloader_status');
     if (!status) {
