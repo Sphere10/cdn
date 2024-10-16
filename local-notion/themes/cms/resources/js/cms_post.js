@@ -1,11 +1,10 @@
 ﻿function PageLoader_Init() {
+    var isBot = /bot|googlebot|bingbot|baiduspider|yandexbot|slurp|duckduckbot|applebot|sogou|seznambot|naverbot|exabot|rogerbot|ahrefsbot/i.test(navigator.userAgent);
+    if (isBot) {
+        return;
+    }
+    $("body").prepend('<div id="preloader"><div id="preloader_status"></div></div>');
     window.addEventListener('load', function () {
-        var isBot = /bot|googlebot|bingbot|baiduspider|yandexbot|slurp|duckduckbot|applebot|sogou|seznambot|naverbot|exabot|rogerbot|ahrefsbot/i.test(navigator.userAgent);
-        if (isBot) {
-            return;
-        }
-
-        $("body").prepend('<div id="preloader"><div id="preloader_status"></div></div>');
         var preloader = document.getElementById('preloader');
         var status = document.getElementById('preloader_status').style;
         status.opacity = 1;
