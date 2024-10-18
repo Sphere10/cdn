@@ -42,7 +42,12 @@ $(document).ready(function () {
 
 // Used to search articles on website, just redirects to google
 function DoSearch(event) {
-    event.preventDefault(); // Prevent form submission
+    if (event.type === "keypress" && event.key !== "Enter") {
+        return; // Do nothing if the key is not Enter
+    }
+
+    event.preventDefault(); // Prevent form submission or default button behavior
+
     const parentElement = event.target.closest('.input-group'); // Get parent .input-group
     const inputElement = parentElement.querySelector('input[type="search"]'); // Find the input inside the parent
     const query = inputElement.value; // Get the value of the input
