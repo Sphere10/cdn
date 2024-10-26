@@ -15,8 +15,6 @@
 		if (!isDownload && !isButton)
 			return;
 
-		// HS 2023-06-01: Due to a bug with Hydrogen token parsing, I've removed the use of { } in the below code
-		// block as a temporary work-around. Ignore uglyness.
 		if (isButton) {
 			$(target).html($(target).html().replace("[", "").replace("]", ""));
 			$(target).attr('class', 'btn btn-sm btn-primary lift');
@@ -38,12 +36,15 @@
 
 		if (isPlatform) {
 			// Minify all links adjacent to download button
-			$(target).nextAll(':not(:empty)').attr('class', 'fs-6 fs-light text-center');
+			$(target).nextAll(':not(:empty)').attr('class', 'small fw-light text-start');
 
 			// add btn styling
-			$(target).attr('class', 'btn btn-sm btn-pill btn-danger text-start');
-			$(target).css('width', '8em');
-			$(target).css('font-weight', 'bold');
+			$(target).attr('class', 'btn btn-sm fw-bold btn-danger text-start');
+			$(target).css('width', '9em');
+			$(target).css('border-radius', '50em');
+			$(target).css('padding-top', '0.7em');
+			$(target).css('padding-bottom', '0.7em');
+			$(target).css('padding-left', '1em');
 		}
 
 		if (isStore) {
