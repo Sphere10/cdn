@@ -57,22 +57,22 @@
 		var storeImageStyle = "width:7.5em";
 
 		if (isWindows) {
-			$(target).prepend('<img src="{theme://resources/img/windows.svg}" style="' + platformImageStyle + '">');
+			$(target).prepend('<img src="https://cdn.jsdelivr.net/gh/sphere10/cdn/local-notion/themes/link_detect_appstores/resources/img/windows.svg" style="' + platformImageStyle + '">');
 		}
 		if (isWindowsStore) {
-			$(target).prepend('<img src="{theme://resources/img/microsoft-store.svg}" style="' + storeImageStyle + '">');
+			$(target).prepend('<img src="https://cdn.jsdelivr.net/gh/sphere10/cdn/local-notion/themes/link_detect_appstores/resources/img/microsoft-store.svg" style="' + storeImageStyle + '">');
 		}
 		if (isMacOS) {
-			$(target).prepend('<img src="{theme://resources/img/apple.svg}" style="' + platformImageStyle + '">');
+			$(target).prepend('<img src="https://cdn.jsdelivr.net/gh/sphere10/cdn/local-notion/themes/link_detect_appstores/resources/img/apple.svg" style="' + platformImageStyle + '">');
 		}
 		if (isAppleStore) {
-			$(target).prepend('<img src="{theme://resources/img/apple-store.svg}" style="' + storeImageStyle + '">');
+			$(target).prepend('<img src="https://cdn.jsdelivr.net/gh/sphere10/cdn/local-notion/themes/link_detect_appstores/resources/img/apple-store.svg" style="' + storeImageStyle + '">');
 		}
 		if (isLinux) {
-			$(target).prepend('<img src="{theme://resources/img/linux.svg}" style="' + platformImageStyle + '">');
+			$(target).prepend('<img src="https://cdn.jsdelivr.net/gh/sphere10/cdn/local-notion/themes/link_detect_appstores/resources/img/linux.svg" style="' + platformImageStyle + '">');
 		}
 		if (isGooglePlay) {
-			$(target).prepend('<img src="{theme://resources/img/google-play.svg}" style="' + storeImageStyle + '">');
+			$(target).prepend('<img src="https://cdn.jsdelivr.net/gh/sphere10/cdn/local-notion/themes/link_detect_appstores/resources/img/google-play.svg" style="' + storeImageStyle + '">');
 		}
 	}
 

@@ -349,7 +349,6 @@ html {
     text-align: center;
     align-content: center;
     z-index: 3; /* Ensures caption is on top */
-    color: #fff;
 }
 
 /* Default styles for small screens */
