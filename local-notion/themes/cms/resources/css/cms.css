@@ -58,6 +58,34 @@ html {
     transform: translate3d(0, -5px, 0);
 }
 
+.text-shadow-sm {
+    text-shadow: 0 0.05em 0.1em rgba(0, 0, 0, 0.05);
+}
+
+.text-shadow {
+    text-shadow: 0 0.08em 0.15em rgba(0, 0, 0, 0.1), 0 0.05em 0.1em rgba(0, 0, 0, 0.06);
+}
+
+.text-shadow-md {
+    text-shadow: 0 0.15em 0.25em rgba(0, 0, 0, 0.1), 0 0.1em 0.15em rgba(0, 0, 0, 0.06);
+}
+
+.text-shadow-lg {
+    text-shadow: 0 0.3em 0.4em rgba(0, 0, 0, 0.1), 0 0.15em 0.2em rgba(0, 0, 0, 0.05);
+}
+
+.text-shadow-xl {
+    text-shadow: 0 0.4em 0.6em rgba(0, 0, 0, 0.15), 0 0.25em 0.3em rgba(0, 0, 0, 0.05);
+}
+
+.text-shadow-2xl {
+    text-shadow: 0 0.5em 1em rgba(0, 0, 0, 0.25);
+}
+
+.text-shadow-none {
+    text-shadow: none;
+}
+
 
 /** NAVBAR **/
 .nav-link {
