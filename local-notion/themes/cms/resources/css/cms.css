@@ -34,6 +34,7 @@ html {
         margin: -100px 0 0 -100px;
     }
 
+ /* Width/Height not available in Bootstrap 5.3 */
 .h-15 {    height: 15% !important; }
 .h-10 {    height: 10% !important; }
 .h-5 {     height: 5% !important; }
@@ -41,6 +42,57 @@ html {
 .w-10 {    width: 10% !important; }
 .w-5 {     width: 5% !important;}
 
+/* Max-width classes */
+.mw-xs {
+    max-width: 10rem !important;
+}
+
+.mw-sm {
+    max-width: 15rem !important;
+}
+
+.mw-md {
+    max-width: 25rem !important;
+}
+
+.mw-lg {
+    max-width: 35rem !important;
+}
+
+.mw-xl {
+    max-width: 45rem !important;
+}
+
+.mw-xxl {
+    max-width: 60rem !important;
+}
+
+/* Max-height classes */
+.mh-xs {
+    max-height: 10rem !important;
+}
+
+.mh-sm {
+    max-height: 15rem !important;
+}
+
+.mh-md {
+    max-height: 25rem !important;
+}
+
+.mh-lg {
+    max-height: 35rem !important;
+}
+
+.mh-xl {
+    max-height: 45rem !important;
+}
+
+.mh-xxl {
+    max-height: 60rem !important;
+}
+
+/* Lifting effect */
 .lift {
     box-shadow: 0 0 0 rgba($black, 0);
     transition: box-shadow .25s ease, transform .25s ease;
@@ -58,6 +110,7 @@ html {
     transform: translate3d(0, -5px, 0);
 }
 
+/* Text Shadows */
 .text-shadow-sm {
     text-shadow: 0 0.08em 0.15em rgba(0, 0, 0, 0.1);
 }
