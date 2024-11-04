@@ -1,1 +1,1 @@
-﻿shadow-sm
+﻿text-shadow-sm

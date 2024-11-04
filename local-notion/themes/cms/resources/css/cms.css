@@ -43,53 +43,119 @@ html {
 .w-5 {     width: 5% !important;}
 
 /* Max-width classes */
-.mw-xs {
+.w-max-xxs {
+    max-width: 5rem !important;
+}
+
+.w-max-xs {
     max-width: 10rem !important;
 }
 
-.mw-sm {
+.w-max-sm {
     max-width: 15rem !important;
 }
 
-.mw-md {
+.w-max-md {
     max-width: 25rem !important;
 }
 
-.mw-lg {
+.w-max-lg {
     max-width: 35rem !important;
 }
 
-.mw-xl {
+.w-max-xl {
     max-width: 45rem !important;
 }
 
-.mw-xxl {
+.w-max-xxl {
     max-width: 60rem !important;
 }
 
+/* Min-width classes */
+.w-min-xxs {
+    min-width: 5rem !important;
+}
+
+.w-min-xs {
+    min-width: 10rem !important;
+}
+
+.w-min-sm {
+    min-width: 15rem !important;
+}
+
+.w-min-md {
+    min-width: 25rem !important;
+}
+
+.w-min-lg {
+    min-width: 35rem !important;
+}
+
+.w-min-xl {
+    min-width: 45rem !important;
+}
+
+.w-min-xxl {
+    min-width: 60rem !important;
+}
+
 /* Max-height classes */
-.mh-xs {
+.h-max-xxs {
+    max-height: 5rem !important;
+}
+
+.h-max-xs {
     max-height: 10rem !important;
 }
 
-.mh-sm {
+.h-max-sm {
     max-height: 15rem !important;
 }
 
-.mh-md {
+.h-max-md {
     max-height: 25rem !important;
 }
 
-.mh-lg {
+.h-max-lg {
     max-height: 35rem !important;
 }
 
-.mh-xl {
+.h-max-xl {
     max-height: 45rem !important;
 }
 
-.mh-xxl {
+.h-max-xxl {
     max-height: 60rem !important;
+}
+
+/* Min-height classes */
+.h-min-xxs {
+    min-height: 5rem !important;
+}
+
+.h-min-xs {
+    min-height: 10rem !important;
+}
+
+.h-min-sm {
+    min-height: 15rem !important;
+}
+
+.h-min-md {
+    min-height: 25rem !important;
+}
+
+.h-min-lg {
+    min-height: 35rem !important;
+}
+
+.h-min-xl {
+    min-height: 45rem !important;
+}
+
+.h-min-xxl {
+    min-height: 60rem !important;
 }
 
 /* Lifting effect */

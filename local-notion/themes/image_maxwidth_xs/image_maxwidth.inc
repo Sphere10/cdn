@@ -1,1 +1,1 @@
-﻿mw-xs
+﻿w-max-xs

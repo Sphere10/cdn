@@ -1,1 +1,1 @@
-﻿shadow-lg
+﻿text-shadow-lg

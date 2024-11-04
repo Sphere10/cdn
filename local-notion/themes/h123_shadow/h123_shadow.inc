@@ -1,1 +1,1 @@
-﻿shadow
+﻿text-shadow
