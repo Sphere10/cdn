@@ -65,7 +65,7 @@ function SetActiveNavbarItems() {
         const href = link.getAttribute('href');
 
         // Ignore links with href="#" or empty href
-        if (!href || href === '#' || href === '') {
+        if (!href || href.includes('#') || href === '') {
             continue;
         }
 

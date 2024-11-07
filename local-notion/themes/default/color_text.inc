@@ -1,1 +1,1 @@
-﻿ln-default-{color}
+﻿ln-color-{color}
