@@ -167,7 +167,12 @@ function InitializeSectionSeparatorShapes() {
         let currentContent = shapeContainerDiv.parentElement;
 
         let nextContent = GetNextVisibleLogicalSibling(currentContent); // Get the next sibling
-
+        if (nextContent && nextContent.tagName.toLowerCase() === 'main') {
+            // If the nextContent is a <main>, get its first child
+            nextContent = nextContent.firstElementChild;
+            if (nextContent && !IsVisible(nextContent))
+                nextContent = GetNextVisibleLogicalSibling(nextContent);
+        }
         if (nextContent) {
             const sectionColor = GetEffectiveBackgroundColor(nextContent); // Get effective background color
             const svgPath = shape.querySelector('svg path'); // Find the path inside the SVG
