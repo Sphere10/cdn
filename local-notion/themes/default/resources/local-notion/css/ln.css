@@ -41,6 +41,83 @@
     --ln-red-bg-rgb: 253, 235, 236;
 }
 
+/* General Layouts */
+.ln-page-wide main {
+    width: 100%;
+}
+
+.ln-page-thin main {
+    width: 11%;
+}
+
+/* Image and Cover Handling */
+.ln-cover {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 35vh;
+    min-height: 200px;
+}
+
+.ln-page-thumbnail {
+    display: block;
+    object-fit: cover;
+    border-radius: 3px;
+    width: 124.32px;
+    height: 124.32px;
+    transition: opacity 100ms ease-out 0s;
+    font-size: 5rem;
+}
+
+.ln-icon-image {
+    object-fit: fill;
+    width: 21.312px;
+    height: 21.312px;
+}
+
+.ln-icon-emoji {
+    display: inline;
+    object-fit: fill;
+    width: 21.312px;
+    height: 21.312px;
+    text-align: center;
+}
+
+/* Table Handling */
+.ln-table {
+    margin: 8px 18px 18px 8px;
+}
+
+/* Child Components */
+.ln-page-children {
+}
+
+.ln-toggle-children {
+    margin-top: 0.7em;
+    margin-left: 1.5em;
+}
+
+.ln-paragraph-children {
+}
+
+.ln-bulleted-list-item-children {
+    margin-left: 0.3em;
+}
+
+.ln-numbered-list-item-children {
+    margin-top: 1.0em;
+    margin-left: 1.5em;
+}
+
+.ln-callout-children {
+    margin-top: 0.2em;
+    margin-left: 2.5em;
+}
+
+.ln-quote-children {
+    margin-top: 1.5em;
+}
+
 /* Hover Highlight */
 .ln-behaviour-hover-highlight:hover {
     background-color: var(--ln-hover-highlight-bg);
@@ -188,7 +265,7 @@
     caret-color: inherit;
 }
 
-/* Reduce code block font size */
+/* Reduce Code Block Font Size */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
     font-size: 95%;
