@@ -105,6 +105,94 @@ html {
 .h-max-xl { max-height: var(--scale-xl) !important; }
 .h-max-xxl { max-height: var(--scale-xxl) !important; }
 
+/* Margin Top Classes */
+.mt-xxs { margin-top: var(--scale-xxs) !important; }
+.mt-xs { margin-top: var(--scale-xs) !important; }
+.mt-sm { margin-top: var(--scale-sm) !important; }
+.mt-md { margin-top: var(--scale-md) !important; }
+.mt-lg { margin-top: var(--scale-lg) !important; }
+.mt-xl { margin-top: var(--scale-xl) !important; }
+.mt-xxl { margin-top: var(--scale-xxl) !important; }
+
+/* Margin Bottom Classes */
+.mb-xxs { margin-bottom: var(--scale-xxs) !important; }
+.mb-xs { margin-bottom: var(--scale-xs) !important; }
+.mb-sm { margin-bottom: var(--scale-sm) !important; }
+.mb-md { margin-bottom: var(--scale-md) !important; }
+.mb-lg { margin-bottom: var(--scale-lg) !important; }
+.mb-xl { margin-bottom: var(--scale-xl) !important; }
+.mb-xxl { margin-bottom: var(--scale-xxl) !important; }
+
+/* Margin Inline Start/End Classes */
+.ms-xxs { margin-inline-start: var(--scale-xxs) !important; }
+.ms-xs { margin-inline-start: var(--scale-xs) !important; }
+.ms-sm { margin-inline-start: var(--scale-sm) !important; }
+.ms-md { margin-inline-start: var(--scale-md) !important; }
+.ms-lg { margin-inline-start: var(--scale-lg) !important; }
+.ms-xl { margin-inline-start: var(--scale-xl) !important; }
+.ms-xxl { margin-inline-start: var(--scale-xxl) !important; }
+
+.me-xxs { margin-inline-end: var(--scale-xxs) !important; }
+.me-xs { margin-inline-end: var(--scale-xs) !important; }
+.me-sm { margin-inline-end: var(--scale-sm) !important; }
+.me-md { margin-inline-end: var(--scale-md) !important; }
+.me-lg { margin-inline-end: var(--scale-lg) !important; }
+.me-xl { margin-inline-end: var(--scale-xl) !important; }
+.me-xxl { margin-inline-end: var(--scale-xxl) !important; }
+
+/* Margin Shorthand Classes */
+.m-xxs { margin: var(--scale-xxs) !important; }
+.m-xs { margin: var(--scale-xs) !important; }
+.m-sm { margin: var(--scale-sm) !important; }
+.m-md { margin: var(--scale-md) !important; }
+.m-lg { margin: var(--scale-lg) !important; }
+.m-xl { margin: var(--scale-xl) !important; }
+.m-xxl { margin: var(--scale-xxl) !important; }
+
+/* Padding Top Classes */
+.pt-xxs { padding-top: var(--scale-xxs) !important; }
+.pt-xs { padding-top: var(--scale-xs) !important; }
+.pt-sm { padding-top: var(--scale-sm) !important; }
+.pt-md { padding-top: var(--scale-md) !important; }
+.pt-lg { padding-top: var(--scale-lg) !important; }
+.pt-xl { padding-top: var(--scale-xl) !important; }
+.pt-xxl { padding-top: var(--scale-xxl) !important; }
+
+/* Padding Bottom Classes */
+.pb-xxs { padding-bottom: var(--scale-xxs) !important; }
+.pb-xs { padding-bottom: var(--scale-xs) !important; }
+.pb-sm { padding-bottom: var(--scale-sm) !important; }
+.pb-md { padding-bottom: var(--scale-md) !important; }
+.pb-lg { padding-bottom: var(--scale-lg) !important; }
+.pb-xl { padding-bottom: var(--scale-xl) !important; }
+.pb-xxl { padding-bottom: var(--scale-xxl) !important; }
+
+/* Padding Inline Start/End Classes */
+.ps-xxs { padding-inline-start: var(--scale-xxs) !important; }
+.ps-xs { padding-inline-start: var(--scale-xs) !important; }
+.ps-sm { padding-inline-start: var(--scale-sm) !important; }
+.ps-md { padding-inline-start: var(--scale-md) !important; }
+.ps-lg { padding-inline-start: var(--scale-lg) !important; }
+.ps-xl { padding-inline-start: var(--scale-xl) !important; }
+.ps-xxl { padding-inline-start: var(--scale-xxl) !important; }
+
+.pe-xxs { padding-inline-end: var(--scale-xxs) !important; }
+.pe-xs { padding-inline-end: var(--scale-xs) !important; }
+.pe-sm { padding-inline-end: var(--scale-sm) !important; }
+.pe-md { padding-inline-end: var(--scale-md) !important; }
+.pe-lg { padding-inline-end: var(--scale-lg) !important; }
+.pe-xl { padding-inline-end: var(--scale-xl) !important; }
+.pe-xxl { padding-inline-end: var(--scale-xxl) !important; }
+
+/* Padding Shorthand Classes */
+.p-xxs { padding: var(--scale-xxs) !important; }
+.p-xs { padding: var(--scale-xs) !important; }
+.p-sm { padding: var(--scale-sm) !important; }
+.p-md { padding: var(--scale-md) !important; }
+.p-lg { padding: var(--scale-lg) !important; }
+.p-xl { padding: var(--scale-xl) !important; }
+.p-xxl { padding: var(--scale-xxl) !important; }
+
 
 /* Lifting effect */
 .lift {
