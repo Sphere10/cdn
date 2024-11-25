@@ -53,11 +53,11 @@ html {
     /* Spacing Sizes */
     --spacing-xxs: calc(var(--spacing-unit) * 1rem);
     --spacing-xs: calc(var(--spacing-unit) * 2rem);
-    --spacing-sm: calc(var(--spacing-unit) * 4rem);
-    --spacing-md: calc(var(--spacing-unit) * 7rem);
-    --spacing-lg: calc(var(--spacing-unit) * 10rem);
-    --spacing-xl: calc(var(--spacing-unit) * 16rem);
-    --spacing-xxl: calc(var(--spacing-unit) * 22rem);
+    --spacing-sm: calc(var(--spacing-unit) * 3rem);
+    --spacing-md: calc(var(--spacing-unit) * 6rem);
+    --spacing-lg: calc(var(--spacing-unit) * 12rem);
+    --spacing-xl: calc(var(--spacing-unit) * 20rem);
+    --spacing-xxl: calc(var(--spacing-unit) * 32rem);
 }
 
 /* Percentage Width/Height (Static) */
