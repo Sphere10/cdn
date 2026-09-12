@@ -51,6 +51,46 @@
 }
 
 /* Image and Cover Handling */
+.ln-page-content figure.ln-image {
+    width: 100%;
+    margin: 0.35rem 0 1rem;
+    padding: 0;
+    border: none;
+    background: none;
+    box-shadow: none;
+}
+.ln-page-content figure.ln-image > a {
+    display: block;
+    width: 100%;
+    text-decoration: none;
+}
+.ln-page-content figure.ln-image img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 0;
+    border: none;
+    border-radius: 4px;
+    background: none;
+    box-shadow: none;
+}
+.ln-page-content figure.ln-image .ln-image-caption {
+    display: block;
+    margin: 6px 0 0;
+    padding: 0;
+    border: none;
+    background: none;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 400;
+    color: var(--ln-gray, rgba(55, 53, 47, 0.65));
+}
+.ln-page-content figure.ln-image .ln-image-caption:empty {
+    display: none;
+}
+
 .ln-cover {
     background-size: cover;
     background-position: center;
@@ -125,70 +165,60 @@
 
 /* Foreground Colors */
 .ln-color-default {
-    background: inherit;
     color: inherit;
     fill: inherit;
     caret-color: inherit;
 }
 
 .ln-color-gray {
-    background: inherit;
     color: var(--ln-gray);
     fill: var(--ln-gray);
     caret-color: var(--ln-gray);
 }
 
 .ln-color-brown {
-    background: inherit;
     color: var(--ln-brown);
     fill: var(--ln-brown);
     caret-color: var(--ln-brown);
 }
 
 .ln-color-orange {
-    background: inherit;
     color: var(--ln-orange);
     fill: var(--ln-orange);
     caret-color: var(--ln-orange);
 }
 
 .ln-color-yellow {
-    background: inherit;
     color: var(--ln-yellow);
     fill: var(--ln-yellow);
     caret-color: var(--ln-yellow);
 }
 
 .ln-color-green {
-    background: inherit;
     color: var(--ln-green);
     fill: var(--ln-green);
     caret-color: var(--ln-green);
 }
 
 .ln-color-blue {
-    background: inherit;
     color: var(--ln-blue);
     fill: var(--ln-blue);
     caret-color: var(--ln-blue);
 }
 
 .ln-color-purple {
-    background: inherit;
     color: var(--ln-purple);
     fill: var(--ln-purple);
     caret-color: var(--ln-purple);
 }
 
 .ln-color-pink {
-    background: inherit;
     color: var(--ln-pink);
     fill: var(--ln-pink);
     caret-color: var(--ln-pink);
 }
 
 .ln-color-red {
-    background: inherit;
     color: var(--ln-red);
     fill: var(--ln-red);
     caret-color: var(--ln-red);
