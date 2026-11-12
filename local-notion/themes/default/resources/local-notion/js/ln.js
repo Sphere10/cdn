@@ -89,7 +89,7 @@ function DoSearch(event) {
 /* Sphere10.VisualRenderer native tabs. MIT license. */
 function InitializeTabs() {
     "use strict";
-    if (window.sphere10Tabs) return;
+    if (window.localNotionTabs) return;
     const controllers = new WeakMap();
     let nextId = 0;
     function uniqueId() {
@@ -179,7 +179,7 @@ function InitializeTabs() {
         document.querySelectorAll("[data-ln-tabs]").forEach(initialize);
         revealHash();
     }
-    window.sphere10Tabs = { initialize: initializeAll };
+    window.localNotionTabs = { initialize: initializeAll };
     window.addEventListener("hashchange", revealHash);
     // Clicking the current fragment again does not raise hashchange.
     document.addEventListener("click", event => {
