@@ -282,3 +282,25 @@ pre[class*="language-"] {
 }
 
 /* End native Notion tabs */
+
+/* ====================================
+   Web bookmarks
+   ==================================== */
+.ln-bookmark-block { margin: 1rem 0; }
+.ln-bookmark { display: flex; overflow: hidden; color: inherit; text-decoration: none; border: 1px solid color-mix(in srgb, currentColor 14%, transparent); border-radius: .6rem; transition: background-color .15s ease; }
+.ln-bookmark:hover { color: inherit; text-decoration: none; background-color: color-mix(in srgb, currentColor 4%, transparent); }
+.ln-bookmark:focus-visible { outline: 2px solid currentColor; outline-offset: 3px; }
+.ln-bookmark-image { flex: 0 0 25%; max-width: 220px; min-width: 120px; position: relative; }
+.ln-bookmark-image img { position: absolute; width: 100%; height: 100%; object-fit: cover; }
+.ln-bookmark-content { flex: 1; min-width: 0; padding: 1.1rem 1.5rem; }
+.ln-bookmark-icon { display: block; width: 20px; height: 20px; object-fit: contain; margin-bottom: .4rem; }
+.ln-bookmark-title { font-weight: 600; font-size: 1rem; line-height: 1.4; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ln-bookmark-description { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; font-size: .875rem; line-height: 1.4; margin-top: .2rem; }
+.ln-bookmark-url { opacity: .65; font-size: .8rem; margin-top: .9rem; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.ln-bookmark-description:empty, .ln-bookmark-block > figcaption:empty { display: none; }
+.ln-bookmark-block > figcaption { margin-top: .4rem; font-size: .875rem; }
+@media (max-width: 480px) {
+    .ln-bookmark-image { flex-basis: 28%; min-width: 80px; }
+    .ln-bookmark-content { padding: .8rem; }
+}
+/* End web bookmarks */
