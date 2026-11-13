@@ -5,6 +5,9 @@
 // Initialize native tabs
 InitializeTabs();
 
+// Initialize code block copy controls
+InitializeCodeBlocks();
+
 // Apply feather icons
 feather.replace();
 
@@ -62,6 +65,62 @@ $(document).ready(function () {
 ////////////////////////////////////
 // Global Functions
 ////////////////////////////////////
+
+////////////////////////////////////
+// Code block clipboard
+////////////////////////////////////
+
+function InitializeCodeBlocks() {
+    function initialize() {
+        document.querySelectorAll('[data-ln-code-block]').forEach(block => {
+            const button = block.querySelector('[data-ln-code-copy]');
+            const code = block.querySelector('pre > code');
+            const status = block.querySelector('.ln-code-status');
+            if (!button || !code || !status || button.dataset.lnCopyReady) return;
+            button.dataset.lnCopyReady = 'true';
+            button.hidden = false;
+            const label = button.querySelector('span');
+            let resetTimer;
+            button.addEventListener('click', async () => {
+                clearTimeout(resetTimer);
+                button.disabled = true;
+                status.textContent = '';
+                try {
+                    // textContent preserves whitespace and excludes the header and Prism markup.
+                    if (navigator.clipboard && window.isSecureContext) {
+                        await navigator.clipboard.writeText(code.textContent);
+                    } else {
+                        // Support exported files and HTTP hosts without the Clipboard API.
+                        const selection = window.getSelection();
+                        const previousRanges = [];
+                        for (let index = 0; index < selection.rangeCount; index++)
+                            previousRanges.push(selection.getRangeAt(index).cloneRange());
+                        const range = document.createRange();
+                        range.selectNodeContents(code);
+                        try {
+                            selection.removeAllRanges();
+                            selection.addRange(range);
+                            if (!document.execCommand('copy')) throw new Error('Clipboard unavailable');
+                        } finally {
+                            selection.removeAllRanges();
+                            previousRanges.forEach(previous => selection.addRange(previous));
+                        }
+                    }
+                    label.textContent = 'Copied';
+                    status.textContent = 'Code copied to clipboard.';
+                } catch {
+                    label.textContent = 'Copy failed';
+                    status.textContent = 'Copy failed. Select the code and copy it manually.';
+                } finally {
+                    button.disabled = false;
+                    resetTimer = setTimeout(() => { label.textContent = 'Copy'; }, 2000);
+                }
+            });
+        });
+    }
+    if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', initialize, { once: true });
+    else initialize();
+}
 
 // Used to search articles on website, just redirects to google
 function DoSearch(event) {

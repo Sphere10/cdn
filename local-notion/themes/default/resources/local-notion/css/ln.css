@@ -255,6 +255,60 @@
     caret-color: inherit;
 }
 
+/* ====================================
+   Code block header and clipboard
+   ==================================== */
+.ln-code-block {
+    margin-block: 1rem;
+    min-width: 0;
+    color: var(--bs-body-color, #243042);
+    background: var(--bs-tertiary-bg, #f7f8fa);
+    border: 1px solid var(--bs-border-color, #dce0e5);
+    border-radius: .375rem;
+    overflow: hidden;
+}
+.ln-code-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+    padding: .5rem .875rem;
+    background: var(--bs-secondary-bg, #eef0f3);
+    border-bottom: 1px solid var(--bs-border-color, #dce0e5);
+    font-family: var(--bs-body-font-family, sans-serif);
+    font-size: .8125rem;
+}
+.ln-code-language { font-weight: 500; }
+.ln-code-copy {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: .4375rem;
+    min-width: 5.25rem;
+    padding: .3125rem .5625rem;
+    font: inherit;
+    color: inherit;
+    background: var(--bs-body-bg, #fff);
+    border: 1px solid var(--bs-border-color, #d2d8e0);
+    border-radius: .25rem;
+    cursor: pointer;
+}
+.ln-code-copy[hidden] { display: none; }
+.ln-code-copy:hover { background: color-mix(in srgb, currentColor 8%, var(--bs-body-bg, #fff)); }
+.ln-code-copy:focus-visible { outline: 2px solid var(--bs-primary, #2e75ce); outline-offset: 2px; }
+.ln-code-copy:disabled { cursor: wait; }
+.ln-code-copy svg { width: .875rem; height: .875rem; }
+.ln-code-block > pre[class], .ln-code-block > pre {
+    margin: 0;
+    padding: 1.125rem;
+    border: 0;
+    border-radius: 0;
+    overflow-x: auto;
+}
+.ln-code-status { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
+@media (pointer: coarse) { .ln-code-copy { min-height: 44px; } }
+@media print { .ln-code-copy { display: none; } }
+
 /* Reduce Code Block Font Size */
 :not(pre) > code[class*="language-"],
 pre[class*="language-"] {
@@ -268,6 +322,7 @@ pre[class*="language-"] {
 /* Sphere10.VisualRenderer native tabs. MIT license. */
 .ln-tabs { margin-block: 1rem; min-width: 0; }
 .ln-tab-label { font-weight: 600; margin-block: .75rem; }
+.ln-tab-label > .ln-icon-emoji, .ln-tab-list > button > .ln-icon-emoji { margin-inline-end: .4em; }
 .ln-tab-label img, .ln-tab-list img { max-width: 1.25em; max-height: 1.25em; vertical-align: middle; margin-inline-end: .4em; }
 .ln-tab-list { display: flex; gap: .25rem; overflow-x: auto; border-bottom: 1px solid color-mix(in srgb, currentColor 25%, transparent); }
 .ln-tab-list > button { appearance: none; font: inherit; color: inherit; cursor: pointer; flex: 0 0 auto; background: transparent; border: 0; border-bottom: 3px solid transparent; padding: .65rem 1rem; }
